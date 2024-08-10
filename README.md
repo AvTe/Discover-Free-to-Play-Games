@@ -1,4 +1,4 @@
-# Browser Games Directory
+# Discover-Free-to-Play-Games
 
 ## Overview
 
@@ -19,5 +19,5 @@ To get started using the Browser Games Directory, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/browser-games-directory.git
-   cd browser-games-directory
+   git clone https://github.com/AvTe/Discover-Free-to-Play-Games/tree/main
+   cd discover-free-to-play-games
