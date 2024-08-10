@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a variety of free-to-play games across different categories and tags.">
+    <title>Free-to-Play Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Discover Free-to-Play Games</h1>
+            <!-- <p> Search using these categories - MMORPG, Shooter Anime, Strategy, Fantasy, Sci-Fi, Sports, Racing,
+                Action, FPS, Social</p> -->
+            <div class="search-container">
+
+                <input type="text" id="categoryInput" placeholder="Search by Category or Tag" aria-label="Search">
+                <button id="searchButton" aria-label="Search">Search</button>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="games-list" id="gamesList">
+            <!-- Games will be rendered here -->
+        </div>
+        <button id="loadMoreButton" aria-label="Load More">Load More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
