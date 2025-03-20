@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover a variety of free-to-play games across different categories and tags.">
-    <title>Free-to-Play Games</title>
+    <title>Free-to-Play Games Explorer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i id="themeIcon" class="fas fa-sun"></i>
+    </button>
+
     <header class="banner">
         <div class="banner-content">
             <h1>Discover Free-to-Play Games</h1>
-            <!-- <p> Search using these categories - MMORPG, Shooter Anime, Strategy, Fantasy, Sci-Fi, Sports, Racing,
-                Action, FPS, Social</p> -->
+            <p>Explore thousands of free games across different categories</p>
             <div class="search-container">
-
-                <input type="text" id="categoryInput" placeholder="Search by Category or Tag" aria-label="Search">
-                <button id="searchButton" aria-label="Search">Search</button>
-
+                <input type="text" id="categoryInput" placeholder="Search by Category (e.g., shooter, mmorpg, racing)" aria-label="Search">
+                <button id="searchButton" aria-label="Search">
+                    <i class="fas fa-search"></i> Search
+                </button>
             </div>
         </div>
     </header>
 
     <div class="container">
+        <!-- Loading Indicator -->
+        <div id="loader" class="loader"></div>
+        
+        <!-- Games Grid -->
         <div class="games-list" id="gamesList">
             <!-- Games will be rendered here -->
         </div>
-        <button id="loadMoreButton" aria-label="Load More">Load More</button>
+        
+        <!-- Load More Button -->
+        <button id="loadMoreButton" aria-label="Load More">
+            <i class="fas fa-spinner"></i> Load More Games
+        </button>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Powered by the Free-to-Play Games Database API</p>
+            <div class="categories-hint">
+                <p>Popular categories: MMORPG, Shooter, Strategy, Action, Racing, Sports, Fantasy</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
